@@ -1,3 +1,254 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --radius: 0.5rem;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+
+     /* MSNS colors */
+  --msns01: 46 15% 83%;
+  --msns02: 82 20% 62%;
+  --msns03: 119 19% 42%;
+  --msns04: 131 22% 29%;
+  --msns05: 150 20% 25%;
+  --msns06: 129 53% 90%;
+  --msns07: 141 45% 81%;
+  --msns08: 147 43% 71%;
+  --msns09: 150 42% 62%;
+  --msns10: 152 41% 52%;
+  --msns11: 153 39% 41%;
+  --msns12: 153 40% 30%;
+  --msns13: 154 43% 18%;
+  --msns14: 159 56% 7%;
+  --msns15: 73 72% 75%;
+  --msns16: 92 62% 72%;
+  --msns17: 110 50% 70%;
+  --msns18: 141 43% 62%;
+  --msns19: 163 41% 52%;
+  --msns20: 182 52% 42%;
+  --msns21: 194 77% 38%;
+  --msns22: 199 72% 36%;
+  --msns23: 206 66% 34%;
+  --msns24: 206 66% 28%;
+  --msns25: 179 78% 75%;
+  --msns26: 345 100% 92%;
+  --msns27: 50 100% 81%;
+  --msns28: 100 92% 81%;
+  --msns29: 143 81% 71%;
+  --msns30: 37 95% 55%;
+  --msns31: 46 100% 64%;
+  --msns32: 63 49% 46%;
+  --msns33: 96 50% 37%;
+  --msns34: 121 64% 17%;
+  --msns35: 60 100% 49%;
+  --msns36: 62 98% 46%;
+  --msns37: 64 96% 43%;
+  --msns38: 66 94% 40%;
+  --msns39: 69 92% 37%;
+  --msns40: 72 89% 35%;
+  --msns41: 77 85% 32%;
+  --msns42: 65 75% 50%;
+  --msns43: 165 79% 42%;
+  --msns44: 165 80% 25%;
+  --msns45: 44 100% 50%;
+  --msns46: 50 100% 50%;
+  --msns47: 39 100% 63%;
+  --msns48: 338 85% 46%;
+  --msns49: 335 52% 37%;
+  --msns50: 178 60% 32%;
+  --msns51: 187 62% 66%;
+  --msns52: 342 100% 88%;
+  --msns53: 278 100% 84%;
+  --msns54: 266 71% 73%;
+  --msns55: 189 75% 75%;
+  --msns56: 163 100% 75%;
+  }
+
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom styles for animations */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes rotateIn {
+  from {
+    opacity: 0;
+    transform: rotateX(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}
+
+.transition-container {
+  animation: slideIn 1s ease-out, rotateIn 1s ease-out;
+}
+
+@keyframes rotateIn3D {
+  0% {
+    opacity: 0;
+    transform: perspective(1000px) rotateX(-90deg);
+  }
+  100% {
+    opacity: 1;
+    transform: perspective(1000px) rotateX(0);
+  }
+}
+
+.transition-container {
+  animation: rotateIn3D 1s ease-out;
+  transform-origin: center bottom;
+}
+
+.text-3d {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  perspective: 1000px;
+}
+.logo-cloud-wrapper {
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+
+.logo-cloud {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+      transform: translateX(0%);
+  }
+  to {
+      transform: translateX(-100%);
+  }
+}
+
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  .animate-slide-in-up {
+    animation: slideInUp 0.8s ease-out;
+  }
+  .animate-fade-in-up {
+    animation: fadeInUp 0.5s ease-in-out;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes slideInUp {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fadeInUp {
+    from {
+      transform: translateY(10px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
